@@ -31,8 +31,8 @@ class Task {
         bgColor: MYellowLight,
         iconColor: MYellowDark,
         btnColor: MYellow,
-        left: 3,
-        done: 1,
+        left: 10,
+        done: 2,
         desc: [
           {
             'time': '9:00 am',
@@ -65,7 +65,7 @@ class Task {
             'title': 'Call with Client',
             'slot': '1:00 - 2:00 pm',
             'tlColor': MYellowDark,
-            'bgColor': MYellowDark
+            'bgColor': MYellowLight
           },
           {
             'time': '2:00 pm',
@@ -81,10 +81,10 @@ class Task {
           },
           {
             'time': '4:00 pm',
-            'title': 'Call with Client',
+            'title': 'Nap',
             'slot': '4:00 - 5:00 pm',
-            'tlColor': MYellowDark,
-            'bgColor': MYellowDark
+            'tlColor': MBlueDark,
+            'bgColor': MBlueLight
           },
           {
             'time': '5:00 pm',
@@ -94,22 +94,43 @@ class Task {
           },
           {
             'time': '6:00 pm',
-            'title': 'Call with Client',
+            'title': 'Tv Time',
             'slot': '6:00 - 7:00 pm',
-            'tlColor': MYellowDark,
-            'bgColor': MYellowDark
+            'tlColor': MRedDark,
+            'bgColor': MRedLight
           },
         ],
       ),
       Task(
-        iconData: Icons.cases_rounded,
-        title: 'Work',
-        bgColor: MRedLight,
-        iconColor: MRedDark,
-        btnColor: MRed,
-        left: 0,
-        done: 0,
-      ),
+          iconData: Icons.cases_rounded,
+          title: 'Work',
+          bgColor: MRedLight,
+          iconColor: MRedDark,
+          btnColor: MRed,
+          left: 0,
+          done: 0,
+          desc: [
+            {
+              'time': '4:00 pm',
+              'title': 'Nap',
+              'slot': '4:00 - 5:00 pm',
+              'tlColor': MBlueDark,
+              'bgColor': MBlueLight
+            },
+            {
+              'time': '5:00 pm',
+              'title': '',
+              'slot': '',
+              'tlColor': Colors.grey.withOpacity(0.3),
+            },
+            {
+              'time': '6:00 pm',
+              'title': 'Tv Time',
+              'slot': '6:00 - 7:00 pm',
+              'tlColor': MRedDark,
+              'bgColor': MRedLight
+            },
+          ]),
       Task(
         iconData: Icons.favorite_rounded,
         title: 'Health',

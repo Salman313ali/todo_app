@@ -54,6 +54,7 @@ class Tasks extends StatelessWidget {
         ),
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
+          mainAxisAlignment: MainAxisAlignment.spaceAround,
           children: [
             Icon(
               task.iconData,

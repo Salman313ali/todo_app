@@ -53,6 +53,20 @@ class DetailPage extends StatelessWidget {
                         (_, index) => TaskTimeLine(detailList[index]),
                         childCount: detailList.length),
                   ),
+            SliverFillRemaining(
+              child: Container(
+                color: Colors.white,
+                child: Center(
+                  child: Text(
+                    " ",
+                    style: TextStyle(
+                      color: Colors.grey,
+                      fontSize: 18,
+                    ),
+                  ),
+                ),
+              ),
+            )
           ],
         ));
   }
